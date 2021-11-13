@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/login.css">
+  
+</head>
+<body>
+    <div class="login-page">
+        <div class="form-box">
+            <h2>Log In</h2>
+            <form action="./index.html" id="login" class='input-group-login' onsubmit = "return validate()">
+                <input type="text"id='email' placeholder="Enter your email address" required>
+                <!-- <label id="error"></label> -->
+                <span></span>
+                <input type="password"id='password' placeholder="Enter password" required>
+                <span></span>
+                <!-- <div id="pwd_error">Please fill your password</div> -->
+                <input type="checkbox"class='check-box'><label class="condition">Remember Password</label>
+                <button type="submit" id='submit-btn' >Log In</button>
+                <h3>Don't have an account? <a href="signup.html">Signup</a></h3>
+            </form>
+        </div>
+    </div>
+<script src="./js/form.js"></script>  
+</body>
+</html>

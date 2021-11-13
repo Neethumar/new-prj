@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/signup.css">
+    
+</head>
+<body>
+    <div class="SignUp-page">
+        <div class="form-box">
+            <h2>Sign Up</h2>
+            <form action="./login.html" id="register" class='input-group-register'onsubmit = "return validate()">
+                <input type="text"class='input-field'id="Username" placeholder="Username" required>
+                <span id="user"></span>
+                <input type="email"class='input-field'id="email" placeholder="Enter your email address" required>
+                <span id="mail"></span>
+                <input type="text"class='input-field'id="phone" placeholder="Enter your phone number" required>
+                <span id="num"></span>
+                <input type="password"class='input-field'id="password" placeholder="Enter password" onkeyup = "return trigger()" required>
+                <div class="indicator">
+                    <span class="weak"></span>
+                    <span class="Medium"></span>
+                    <span class="Strong"></span>
+                </div>
+                <div class="text"></div>
+                <input type="password"class='input-field' id="cpassword" placeholder="Confirm password" required>
+                <span id="cpass"></span>
+                <input type="checkbox"class='check-box'><label class="condition">I agree to the terms and conditions</label>
+                <button type="submit" class='submit-btn'>Register</button>
+                <h3>Already have an account? <a href="login.html">Log In</a></h3>
+            </form>
+        </div>
+    </div>
+  <script src="./js/reg.js"></script>  
+</body>
+</html>
