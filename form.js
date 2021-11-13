@@ -10,7 +10,7 @@ function validate(){
         if (regx.test(email.value)){
             span[0].innerText = "Your email is valid";
             span[0].style.color = "lime";
-            return true;
+            return passit();
            
         }
 
