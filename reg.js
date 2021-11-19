@@ -3,12 +3,12 @@
 
 function trigger(){
 
-    const indicator = document.querySelector(".indicator");
-const input = document.getElementById("password");
-const weak = document.querySelector(".weak");
-const medium = document.querySelector(".Medium");
-const strong = document.querySelector(".Strong");
-const text = document.querySelector(".text");
+    let indicator = document.querySelector(".indicator");
+let input = document.getElementById("password");
+let weak = document.querySelector(".weak");
+let medium = document.querySelector(".Medium");
+let strong = document.querySelector(".Strong");
+let text = document.querySelector(".text");
 
     let regExpvvweak =/[a-z]/;
 let regExpvweak =/[A-Z]/;
@@ -52,12 +52,12 @@ let regExpstr =/.[!,@,#,$,%,^,&,*,(,)]/;
 
 
 function validate(){
-const usr= document.getElementById('Username').value.trim();
-const email= document.getElementById('email').value.trim();
-const phn= document.getElementById('phone').value.trim();
-const password= document.getElementById('password').value.trim();
-const cpassword= document.getElementById('cpassword').value.trim();
-const regx =/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).\([a-z]{2,8})(.[a-z]{2,3})?$/
+let usr= document.getElementById('Username').value.trim();
+let email= document.getElementById('email').value.trim();
+let phn= document.getElementById('phone').value.trim();
+let password= document.getElementById('password').value.trim();
+let cpassword= document.getElementById('cpassword').value.trim();
+let regx =/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).\([a-z]{2,8})(.[a-z]{2,3})?$/
 
 if((usr.length < 3)||(usr.length > 20)){
     document.getElementById('user').innerText = "**Username length must be between 3 and 20";
