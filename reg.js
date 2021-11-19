@@ -57,7 +57,7 @@ let email= document.getElementById('email').value.trim();
 let phn= document.getElementById('phone').value.trim();
 let password= document.getElementById('password').value.trim();
 let cpassword= document.getElementById('cpassword').value.trim();
-let regx =/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).\([a-z]{2,8})(.[a-z]{2,3})?$/
+let regx =/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).\([a-z]{2,8})(.[a-z]{2,3})?$/;
 
 if((usr.length < 3)||(usr.length > 20)){
     document.getElementById('user').innerText = "**Username length must be between 3 and 20";
